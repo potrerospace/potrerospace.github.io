@@ -104,4 +104,3 @@ $(document).ready(function () {
     $(".text_input").attr("placeholder", "Comments: Tile X_Y");
   });
 });
-"use strict";
