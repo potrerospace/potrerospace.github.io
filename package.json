@@ -1,0 +1,34 @@
+{
+  "name": "opensourcearchitecture.github.io",
+  "version": "0.0.1",
+  "description": "open source architecture code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/opensourcearchitecture/opensourcearchitecture.github.io.git"
+  },
+  "author": "Mitch",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "@babel/preset-env": "^7.8.6",
+    "bootstrap": "^4.4.1",
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-wait": "0.0.2",
+    "jquery": "^3.4.1",
+    "node-sass": "^4.13.1"
+  },
+  "keywords": [
+    "Architecture",
+    "Discourse"
+  ],
+  "license": "ISC"
+}

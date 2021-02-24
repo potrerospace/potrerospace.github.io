@@ -1,0 +1,34 @@
+//press image
+.radio_img1 {
+	@include bckImg("../images/robot5.jpg");
+	background-size: cover;
+	height: 40vw;
+	width: 40vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5vw;
+	margin-bottom: 5vw;
+	font-size: 0;
+}
+
+.radio_img2 {
+	@extend .radio_img1;
+	@include bckImg("../images/robot6.jpg");
+}
+
+.radio_img3 {
+	@extend .radio_img1;
+	@include bckImg("../images/robot7.jpg");
+}
+
+.embed {
+	margin-top: 5vw;
+	margin-bottom: 5vw;
+}
+
+.highlight {
+	h2 {
+		color: $portfolio-pink;
+	}
+
+}

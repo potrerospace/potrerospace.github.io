@@ -1,0 +1,40 @@
+//center covered image
+@mixin bckImg($url) {
+	background: url($url) no-repeat center center;
+	background-size: contain;
+}
+
+//formatting blocks
+//center container
+@mixin centerContainer ($position:relative, $padding-top:0px,
+						$padding-bottom:0px, $background:none){
+	position: $position;
+	width: 100%;
+	padding-top: $padding-top;
+	padding-bottom: $padding-bottom;
+	text-align: center;
+	background: $background;
+}
+
+//center contents
+@mixin centerContents ($height:auto, $width:auto, $background-image:none, $flex-direction: row) {
+	display: flex;
+	flex-direction: $flex-direction;
+	justify-content: center;
+	margin: auto;
+	height: $height;
+	width: $width;
+	background: url($background-image) no-repeat center center;
+	background-size: contain;
+}
+
+//preload background images and change on hover for landing projects
+@mixin preLoadHov($urlLand,$urlHover) {
+	background: url($urlLand) no-repeat center center,
+				url($urlHover) no-repeat -9999px -9999px;
+	background-size: contain;
+	&:hover {
+		background: url($urlHover) no-repeat center center;
+		background-size: contain;
+	}
+}

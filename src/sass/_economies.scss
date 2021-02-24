@@ -1,0 +1,26 @@
+//press image
+.property_map_1_2000 {
+	@include bckImg("../images/mv_1_2000.png");
+	background-size: cover;
+	height: 65vw;
+	width: 65vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20vw;
+	font-size: 0;
+}
+
+.property_map_1_1000 {
+	@extend .property_map_1_2000;
+	@include bckImg("../images/mv_1_1000.png");
+}
+
+.zoning_map_1_2000 {
+	@extend .property_map_1_2000;
+	@include bckImg("../images/Zoning_1_2000.png");
+}
+
+.zoning_map_1_1000 {
+	@extend .property_map_1_2000;
+	@include bckImg("../images/Zoning_1_1000.png");
+}

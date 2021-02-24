@@ -1,0 +1,1034 @@
+@import url(https://fonts.googleapis.com/css?family=Lora|Roboto|Roboto+Mono);
+body {
+  background-color: #e5e5e5;
+  text-align: center; }
+
+h1 {
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  padding: 0 0.25em 0.5em 0.25em;
+  text-decoration: none;
+  line-height: 1.25em; }
+
+h2, .navigation li {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: #494949;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  text-decoration: none; }
+
+h3 {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #494949;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  text-decoration: none; }
+
+p, .centerAlign, .centerAlignBold {
+  font-size: 12px;
+  font-family: "Lora", serif;
+  color: #494949;
+  text-decoration: none;
+  line-height: 1.5em;
+  padding: .15em;
+  text-indent: 25px;
+  text-align: left; }
+
+.centerAlign {
+  text-align: center; }
+
+.centerAlignBold {
+  text-align: center;
+  font-weight: bold; }
+
+.full_block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  height: 100vh;
+  width: 100vw;
+  background: url(none) no-repeat center center;
+  background-size: contain;
+  position: relative;
+  overflow: hidden; }
+  .full_block h2, .full_block .navigation li, .navigation .full_block li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    height: auto;
+    width: 200px;
+    background: url(none) no-repeat center center;
+    background-size: contain;
+    margin-top: 1em; }
+    .full_block h2:hover, .full_block .navigation li:hover, .navigation .full_block li:hover {
+      background-color: rgba(73, 73, 73, 0.1); }
+  .full_block a {
+    text-decoration: none; }
+
+.header {
+  position: relative;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  background: none; }
+
+.navigation {
+  position: fixed;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  background: linear-gradient(rgba(229, 229, 229, 0), #e5e5e5, #e5e5e5);
+  bottom: 0px; }
+  .navigation ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    height: auto;
+    width: auto;
+    background: url(none) no-repeat center center;
+    background-size: contain;
+    padding: 0; }
+  .navigation li {
+    display: inline-block;
+    margin: 0 0.75em;
+    padding: .35em 1em;
+    border: none;
+    background-color: none;
+    border-radius: 5px; }
+    .navigation li:hover {
+      background-color: rgba(73, 73, 73, 0.1); }
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  /* make scrollbar transparent */ }
+
+@-moz-document url-prefix() {
+  html, body {
+    overflow: hidden !important; } }
+
+.header_landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  height: 150px;
+  width: 300px;
+  background: url("../images/Landing_Title.png") no-repeat center center;
+  background-size: contain; }
+
+.projects_main {
+  position: relative;
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+  background: none;
+  margin-bottom: 200px; }
+  .projects_main h2, .projects_main .navigation li, .navigation .projects_main li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    height: auto;
+    width: 200px;
+    background: url(none) no-repeat center center;
+    background-size: contain;
+    margin-top: 1em; }
+    .projects_main h2:hover, .projects_main .navigation li:hover, .navigation .projects_main li:hover {
+      background-color: rgba(73, 73, 73, 0.1); }
+  .projects_main a {
+    text-decoration: none; }
+
+.index_button {
+  width: 150px;
+  border: none;
+  background-color: none;
+  border-radius: 5px; }
+  .index_button:hover {
+    background-color: rgba(73, 73, 73, 0.1); }
+
+.p1_landing, .p2_landing, .p3_landing, .p4_landing, .p5_landing, .p6_landing, .p7_landing, .p8_landing, .p9_landing, .p10_landing, .p11_landing, .p12_landing, .p13_landing, .p14_landing, .p15_landing, .p16_landing, .p17_landing {
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  margin-bottom: 60px;
+  margin-left: 40px;
+  margin-right: 40px; }
+
+.p1_landing {
+  background: url("../images/archive/lndImgBW.png") no-repeat center center, url("../images/archive/lndImgCL.png") no-repeat -9999px -9999px;
+  background-size: contain; }
+  .p1_landing:hover {
+    background: url("../images/archive/lndImgCL.png") no-repeat center center;
+    background-size: contain; }
+
+.p2_landing {
+  background: url("../images/schuylkillwaterpark/lndImgBW.png") no-repeat center center, url("../images/schuylkillwaterpark/lndImgCL.png") no-repeat -9999px -9999px;
+  background-size: contain; }
+  .p2_landing:hover {
+    background: url("../images/schuylkillwaterpark/lndImgCL.png") no-repeat center center;
+    background-size: contain; }
+
+.p3_landing {
+  background: url("../images/pavilion/lndImgBW.png") no-repeat center center, url("../images/pavilion/lndImgCL.png") no-repeat -9999px -9999px;
+  background-size: contain; }
+  .p3_landing:hover {
+    background: url("../images/pavilion/lndImgCL.png") no-repeat center center;
+    background-size: contain; }
+
+.p4_landing {
+  background: url("../images/dockstreet/lndImgBW.png") no-repeat center center, url("../images/dockstreet/lndImgCL.png") no-repeat -9999px -9999px;
+  background-size: contain; }
+  .p4_landing:hover {
+    background: url("../images/dockstreet/lndImgCL.png") no-repeat center center;
+    background-size: contain; }
+
+.p5_landing {
+  background: url("../images/ops/lndImgBW.png") no-repeat center center, url("../images/ops/lndImgCL.png") no-repeat -9999px -9999px;
+  background-size: contain; }
+  .p5_landing:hover {
+    background: url("../images/ops/lndImgCL.png") no-repeat center center;
+    background-size: contain; }
+
+.p6_landing {
+  background: url("../images/1523island/lndImgBW.png") no-repeat center center, url("../images/1523island/lndImgCL.png") no-repeat -9999px -9999px;
+  background-size: contain; }
+  .p6_landing:hover {
+    background: url("../images/1523island/lndImgCL.png") no-repeat center center;
+    background-size: contain; }
+
+.p7_landing {
+  background: url("../images/cornellmodels/lndImgBW.png") no-repeat center center, url("../images/cornellmodels/lndImgCL.png") no-repeat -9999px -9999px;
+  background-size: contain; }
+  .p7_landing:hover {
+    background: url("../images/cornellmodels/lndImgCL.png") no-repeat center center;
+    background-size: contain; }
+
+.p8_landing {
+  background: url("../images/sitedrawingslocal/lndImgBW.png") no-repeat center center, url("../images/sitedrawingslocal/lndImgCL.png") no-repeat -9999px -9999px;
+  background-size: contain; }
+  .p8_landing:hover {
+    background: url("../images/sitedrawingslocal/lndImgCL.png") no-repeat center center;
+    background-size: contain; }
+
+.p9_landing {
+  background: url("../images/desk/lndImgBW.png") no-repeat center center, url("../images/desk/lndImgCL.png") no-repeat -9999px -9999px;
+  background-size: contain; }
+  .p9_landing:hover {
+    background: url("../images/desk/lndImgCL.png") no-repeat center center;
+    background-size: contain; }
+
+.p10_landing {
+  background: url("../images/127garage/lndImgBW.png") no-repeat center center, url("../images/127garage/lndImgCL.png") no-repeat -9999px -9999px;
+  background-size: contain; }
+  .p10_landing:hover {
+    background: url("../images/127garage/lndImgCL.png") no-repeat center center;
+    background-size: contain; }
+
+.p11_landing {
+  background: url("../images/sitedrawingsinternational/lndImgBW.png") no-repeat center center, url("../images/sitedrawingsinternational/lndImgCL.png") no-repeat -9999px -9999px;
+  background-size: contain; }
+  .p11_landing:hover {
+    background: url("../images/sitedrawingsinternational/lndImgCL.png") no-repeat center center;
+    background-size: contain; }
+
+.p12_landing {
+  background: url("../images/coffeetable/lndImgBW.png") no-repeat center center, url("../images/coffeetable/lndImgCL.png") no-repeat -9999px -9999px;
+  background-size: contain; }
+  .p12_landing:hover {
+    background: url("../images/coffeetable/lndImgCL.png") no-repeat center center;
+    background-size: contain; }
+
+.p13_landing {
+  background: url("../images/scenephotography/lndImgBW.png") no-repeat center center, url("../images/scenephotography/lndImgCL.png") no-repeat -9999px -9999px;
+  background-size: contain; }
+  .p13_landing:hover {
+    background: url("../images/scenephotography/lndImgCL.png") no-repeat center center;
+    background-size: contain; }
+
+.p14_landing {
+  background: url("../images/koleshopdwgs/lndImgBW.png") no-repeat center center, url("../images/koleshopdwgs/lndImgCL.png") no-repeat -9999px -9999px;
+  background-size: contain; }
+  .p14_landing:hover {
+    background: url("../images/koleshopdwgs/lndImgCL.png") no-repeat center center;
+    background-size: contain; }
+
+.p15_landing {
+  background: url("../images/summerstudio/lndImgBW.png") no-repeat center center, url("../images/summerstudio/lndImgCL.png") no-repeat -9999px -9999px;
+  background-size: contain; }
+  .p15_landing:hover {
+    background: url("../images/summerstudio/lndImgCL.png") no-repeat center center;
+    background-size: contain; }
+
+.p16_landing {
+  background: url("../images/mspbanner/lndImgBW.png") no-repeat center center, url("../images/mspbanner/lndImgCL.png") no-repeat -9999px -9999px;
+  background-size: contain; }
+  .p16_landing:hover {
+    background: url("../images/mspbanner/lndImgCL.png") no-repeat center center;
+    background-size: contain; }
+
+.p17_landing {
+  background: url("../images/dresser/lndImgBW.png") no-repeat center center, url("../images/dresser/lndImgCL.png") no-repeat -9999px -9999px;
+  background-size: contain; }
+  .p17_landing:hover {
+    background: url("../images/dresser/lndImgCL.png") no-repeat center center;
+    background-size: contain; }
+
+.about_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  height: 50vh;
+  width: 75vw;
+  background: url(none) no-repeat center center;
+  background-size: contain; }
+
+.header_project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  height: 75px;
+  width: 150px;
+  background: url("../images/Project_Title.png") no-repeat center center;
+  background-size: contain; }
+
+.header_project_end {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  height: 75px;
+  width: 150px;
+  background: url("../images/Project_End_Title.png") no-repeat center center;
+  background-size: contain; }
+
+.step_back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  height: auto;
+  width: auto;
+  background: url(none) no-repeat center center;
+  background-size: contain;
+  position: absolute;
+  height: 100%;
+  left: 5vw; }
+
+.scroll_container {
+  height: 100%;
+  width: 75vw;
+  overflow: scroll;
+  position: relative;
+  -webkit-overflow-scrolling: touch; }
+
+.scroll_container::-webkit-scrollbar {
+  display: none; }
+
+.step_forward {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  height: auto;
+  width: auto;
+  background: url(none) no-repeat center center;
+  background-size: contain;
+  position: absolute;
+  height: 100%;
+  right: 5vw; }
+
+.step_button_L_end, .step_button_L {
+  height: 50px;
+  width: 50px; }
+
+.step_button_L {
+  background: url("../images/stepleft.png") no-repeat center center, url("../images/steplefthighlight.png") no-repeat -9999px -9999px;
+  background-size: contain; }
+  .step_button_L:hover {
+    background: url("../images/steplefthighlight.png") no-repeat center center;
+    background-size: contain; }
+
+.step_button_R_end, .step_button_R {
+  height: 50px;
+  width: 50px; }
+
+.step_button_R {
+  background: url("../images/stepright.png") no-repeat center center, url("../images/steprighthighlight.png") no-repeat -9999px -9999px;
+  background-size: contain; }
+  .step_button_R:hover {
+    background: url("../images/steprighthighlight.png") no-repeat center center;
+    background-size: contain; }
+
+.p1Im1 {
+  background: url("../images/archive/Im1.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p1Im2 {
+  background: url("../images/archive/Im2.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p1Im3 {
+  background: url("../images/archive/Im3.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p1Im4 {
+  background: url("../images/archive/Im4.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw;
+  margin-bottom: 150px; }
+
+.p2Im1 {
+  background: url("../images/schuylkillwaterpark/Im1.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p2Im2 {
+  background: url("../images/schuylkillwaterpark/Im2.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p2Im3 {
+  background: url("../images/schuylkillwaterpark/Im3.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p2Im4 {
+  background: url("../images/schuylkillwaterpark/Im4.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw;
+  margin-bottom: 150px; }
+
+.p3Im1 {
+  background: url("../images/pavilion/Im1.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p3Im2 {
+  background: url("../images/pavilion/Im2.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p3Im3 {
+  background: url("../images/pavilion/Im3.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p3Im4 {
+  background: url("../images/pavilion/Im4.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw;
+  margin-bottom: 150px; }
+
+.p4Im1 {
+  background: url("../images/dockstreet/Im1.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p4Im2 {
+  background: url("../images/dockstreet/Im2.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p4Im3 {
+  background: url("../images/dockstreet/Im3.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p4Im4 {
+  background: url("../images/dockstreet/Im4.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw;
+  margin-bottom: 150px; }
+
+.p5Im1 {
+  background: url("../images/ops/Im1.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p5Im2 {
+  background: url("../images/ops/Im2.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p5Im3 {
+  background: url("../images/ops/Im3.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p5Im4 {
+  background: url("../images/ops/Im4.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw;
+  margin-bottom: 150px; }
+
+.p6Im1 {
+  background: url("../images/1523island/Im1.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p6Im2 {
+  background: url("../images/1523island/Im2.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p6Im3 {
+  background: url("../images/1523island/Im3.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p6Im4 {
+  background: url("../images/1523island/Im4.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw;
+  margin-bottom: 150px; }
+
+.p7Im1 {
+  background: url("../images/cornellmodels/Im1.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p7Im2 {
+  background: url("../images/cornellmodels/Im2.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p7Im3 {
+  background: url("../images/cornellmodels/Im3.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p7Im4 {
+  background: url("../images/cornellmodels/Im4.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw;
+  margin-bottom: 150px; }
+
+.p8Im1 {
+  background: url("../images/sitedrawingslocal/Im1.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p8Im2 {
+  background: url("../images/sitedrawingslocal/Im2.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p8Im3 {
+  background: url("../images/sitedrawingslocal/Im3.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p8Im4 {
+  background: url("../images/sitedrawingslocal/Im4.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw;
+  margin-bottom: 150px; }
+
+.p9Im1 {
+  background: url("../images/desk/Im1.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p9Im2 {
+  background: url("../images/desk/Im2.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p9Im3 {
+  background: url("../images/desk/Im3.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p9Im4 {
+  background: url("../images/desk/Im4.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw;
+  margin-bottom: 150px; }
+
+.p10Im1 {
+  background: url("../images/127garage/Im1.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p10Im2 {
+  background: url("../images/127garage/Im2.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p10Im3 {
+  background: url("../images/127garage/Im3.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p10Im4 {
+  background: url("../images/127garage/Im4.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw;
+  margin-bottom: 150px; }
+
+.p11Im1 {
+  background: url("../images/sitedrawingsinternational/Im1.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p11Im2 {
+  background: url("../images/sitedrawingsinternational/Im2.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p11Im3 {
+  background: url("../images/sitedrawingsinternational/Im3.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p11Im4 {
+  background: url("../images/sitedrawingsinternational/Im4.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw;
+  margin-bottom: 150px; }
+
+.p12Im1 {
+  background: url("../images/coffeetable/Im1.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p12Im2 {
+  background: url("../images/coffeetable/Im2.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p12Im3 {
+  background: url("../images/coffeetable/Im3.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p12Im4 {
+  background: url("../images/coffeetable/Im4.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw;
+  margin-bottom: 150px; }
+
+.p13Im1 {
+  background: url("../images/scenephotography/Im1.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p13Im2 {
+  background: url("../images/scenephotography/Im2.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p13Im3 {
+  background: url("../images/scenephotography/Im3.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p13Im4 {
+  background: url("../images/scenephotography/Im4.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw;
+  margin-bottom: 150px; }
+
+.p14Im1 {
+  background: url("../images/koleshopdwgs/Im1.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p14Im2 {
+  background: url("../images/koleshopdwgs/Im2.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p14Im3 {
+  background: url("../images/koleshopdwgs/Im3.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p14Im4 {
+  background: url("../images/koleshopdwgs/Im4.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw;
+  margin-bottom: 150px; }
+
+.p15Im1 {
+  background: url("../images/summerstudio/Im1.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p15Im2 {
+  background: url("../images/summerstudio/Im2.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p15Im3 {
+  background: url("../images/summerstudio/Im3.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p15Im4 {
+  background: url("../images/summerstudio/Im4.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw;
+  margin-bottom: 150px; }
+
+.p16Im1 {
+  background: url("../images/mspbanner/Im1.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p16Im2 {
+  background: url("../images/mspbanner/Im2.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p16Im3 {
+  background: url("../images/mspbanner/Im3.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p16Im4 {
+  background: url("../images/mspbanner/Im4.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw;
+  margin-bottom: 150px; }
+
+.p17Im1 {
+  background: url("../images/dresser/Im1.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p17Im2 {
+  background: url("../images/dresser/Im2.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p17Im3 {
+  background: url("../images/dresser/Im3.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.p17Im4 {
+  background: url("../images/dresser/Im4.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw;
+  margin-bottom: 150px; }
+
+.description_container {
+  position: absolute;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background: none;
+  left: 0px;
+  bottom: 60px; }
+
+.description_text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  height: auto;
+  width: 75vw;
+  background: url(none) no-repeat center center;
+  background-size: contain;
+  background: whitesmoke;
+  border: 1px solid #494949;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  display: none; }
+  .description_text:hover {
+    background: rgba(155, 49, 160, 0.5); }
+
+.description_holder {
+  border: 1px solid #494949;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  width: 150px;
+  margin: auto;
+  cursor: pointer;
+  -webkit-appearance: none; }
+  .description_holder:hover {
+    background: rgba(155, 49, 160, 0.5); }
+
+.holder_head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  height: 100px;
+  width: 500px;
+  background: url("../images/Holder_Title.png") no-repeat center center;
+  background-size: contain;
+  margin: 30px auto; }
+
+.comment_grid {
+  background: url("../images/Site_Plan_Dupree_Proposal.png") no-repeat center center;
+  background-size: contain;
+  background-size: cover;
+  height: 75vw;
+  width: 75vw;
+  margin-bottom: 20vw;
+  font-size: 0; }
+
+.tile_container {
+  display: inline-block;
+  text-align: center;
+  font-size: 0;
+  border: none; }
+  .tile_container:hover {
+    background-color: rgba(155, 49, 160, 0.5); }
+
+.input_container {
+  position: absolute;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background: none;
+  left: 0px;
+  bottom: 60px; }
+
+.text_input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  height: auto;
+  width: 50vw;
+  background: url(none) no-repeat center center;
+  background-size: contain;
+  background: whitesmoke;
+  border: 1px solid #494949;
+  border-radius: 10px;
+  padding: 20px;
+  display: none;
+  margin-bottom: 10px;
+  font-size: 15pt; }
+
+.input_off {
+  display: none; }
+
+.press_scroll {
+  background: url("../images/press_scroll.png") no-repeat center center;
+  background-size: contain;
+  background-size: cover;
+  height: 548vw;
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20vw;
+  font-size: 0; }
+
+.property_map_1_2000, .property_map_1_1000, .zoning_map_1_2000, .zoning_map_1_1000 {
+  background: url("../images/mv_1_2000.png") no-repeat center center;
+  background-size: contain;
+  background-size: cover;
+  height: 65vw;
+  width: 65vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20vw;
+  font-size: 0; }
+
+.property_map_1_1000 {
+  background: url("../images/mv_1_1000.png") no-repeat center center;
+  background-size: contain; }
+
+.zoning_map_1_2000 {
+  background: url("../images/Zoning_1_2000.png") no-repeat center center;
+  background-size: contain; }
+
+.zoning_map_1_1000 {
+  background: url("../images/Zoning_1_1000.png") no-repeat center center;
+  background-size: contain; }
+
+.storyboard_scroll {
+  background: url("../images/Storyboard_Scroll.png") no-repeat center center;
+  background-size: contain;
+  background-size: cover;
+  height: 125vw;
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20vw;
+  font-size: 0; }
+
+.radio_img1, .radio_img2, .radio_img3 {
+  background: url("../images/robot5.jpg") no-repeat center center;
+  background-size: contain;
+  background-size: cover;
+  height: 40vw;
+  width: 40vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  font-size: 0; }
+
+.radio_img2 {
+  background: url("../images/robot6.jpg") no-repeat center center;
+  background-size: contain; }
+
+.radio_img3 {
+  background: url("../images/robot7.jpg") no-repeat center center;
+  background-size: contain; }
+
+.embed {
+  margin-top: 5vw;
+  margin-bottom: 5vw; }
+
+.highlight h2, .highlight .navigation li, .navigation .highlight li {
+  color: #c831a0; }

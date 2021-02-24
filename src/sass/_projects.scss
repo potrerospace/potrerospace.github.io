@@ -1,0 +1,126 @@
+//About styling
+.about_block{
+	@include centerContents ($height: 50vh, $width: 75vw, $flex-direction: column);
+}
+
+//project page styling
+.header_project {
+	@include centerContents($height: 75px, $width: 150px, 
+			$background-image: $image-projecthead, $flex-direction: column);
+}
+
+//project page styling
+.header_project_end {
+	@include centerContents($height: 75px, $width: 150px, 
+			$background-image: $image-projectheadend, $flex-direction: column);
+}
+
+
+.step_back {
+	@include centerContents ($flex-direction: column);
+	position: absolute;
+	height: 100%;
+	left: 5vw;
+}
+
+//scroll container
+.scroll_container{
+	height: 100%;
+	width: 75vw;
+	overflow: scroll;
+	position: relative;
+	-webkit-overflow-scrolling: touch;
+}
+.scroll_container::-webkit-scrollbar {
+    display: none;
+}
+
+
+//project page styling
+.step_forward {
+	@include centerContents ($flex-direction: column);
+	position: absolute;
+	height: 100%;
+	right: 5vw;
+}
+
+//step buttons
+.step_button_L_end {
+	height: 50px;
+	width: 50px;
+}
+
+.step_button_L {
+	@extend .step_button_L_end;
+		background: url($image-stepleft-hold) no-repeat center center,
+				url($image-stepleft-highlight) no-repeat -9999px -9999px;
+				background-size: contain;
+	&:hover {
+		@include bckImg($image-stepleft-highlight);
+	}
+}
+
+.step_button_R_end {
+	height: 50px;
+	width: 50px;
+}
+
+.step_button_R {
+	@extend .step_button_R_end;
+	background: url($image-stepright-hold) no-repeat center center,
+				url($image-stepright-highlight) no-repeat -9999px -9999px;
+				background-size: contain;
+	&:hover {
+		@include bckImg($image-stepright-highlight);
+	}
+}
+
+//project images
+@each $p-num, $title in $project-index {
+	@for $i from 1 through 4 {
+		.#{$p-num}Im#{$i} {
+			@include bckImg("../images/#{$title}/Im#{$i}.png");
+			width: 75vw;
+			height: 55vw;
+			margin-bottom: 10vw;
+			@if $i == 4 {
+				margin-bottom: 150px;
+				}
+		}
+	}
+}
+
+//description box
+.description_container {
+	@include centerContainer($position: absolute, $padding-top: 10px, $padding-bottom: 10px);
+	left: 0px;
+	bottom: 60px;
+}
+
+.description_text {
+	@include centerContents($width: 75vw);
+	background: $color-textbackground;
+	border: 1px solid $dark-gray;
+	border-radius: 10px;
+	padding: 10px;
+	cursor: pointer;
+	display: none;
+	&:hover {
+		background: $portfolio-pink-tsp;
+	}
+}
+.description_holder {
+	border: 1px solid $dark-gray;
+	background-color: $color-textbackground;
+	border-radius: 5px;
+	width: 150px;
+	margin: auto;
+	cursor: pointer;
+	-webkit-appearance: none;
+	&:hover {
+		background: $portfolio-pink-tsp;
+	}
+}
+
+//Scroll Padding
+

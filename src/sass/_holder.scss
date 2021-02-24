@@ -1,0 +1,5 @@
+.holder_head {
+	@include centerContents ($height: 100px, $width: 500px, $background-image: $image-holderhead,
+			$flex-direction: column);
+	margin: 30px auto;
+}

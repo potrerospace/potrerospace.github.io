@@ -1,0 +1,11 @@
+//press image
+.press_scroll {
+	@include bckImg("../images/press_scroll.png");
+	background-size: cover;
+	height: 548vw;
+	width: 75vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20vw;
+	font-size: 0;
+}

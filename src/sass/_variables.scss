@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/css?family=Lora|Roboto|Roboto+Mono);
+
+//fonts
+$font-header: 'Roboto', sans-serif;
+$font-subheader: 'Roboto', sans-serif;
+$font-description: 'Lora', serif;
+$font-other: 'Roboto Mono', monospace;
+
+//color store
+$white-gray: rgb(245,245,245);
+$light-gray: rgb(229,229,229);
+$light-gray-tsp: rgba(229,229,229,0.80);
+$dark-gray: rgb(73, 73, 73);
+$med-gray: rgb(150, 150, 150);
+$dark-gray-tsp: rgba(73, 73, 73,0.10); 
+$portfolio-pink: rgb(200, 49, 160);
+$portfolio-pink-tsp: rgba(155, 49, 160,0.50);
+$transparent: rgba(229,229,229,0);
+$mint: rgb(149, 214, 189);
+$mint-tsp: rgba(149, 214, 189,0.75);
+
+//color Assign
+$color-textbackground: $white-gray;
+$color-background: $light-gray;
+$color-header: black;
+$color-subheader: $dark-gray;
+$color-description: $dark-gray;
+$color-button-background: $light-gray-tsp;
+$color-button-text: $dark-gray;
+
+//Heading Images
+$image-landinghead: "../images/Landing_Title.png";
+$image-holderhead: "../images/Holder_Title.png";
+$image-projecthead: "../images/Project_Title.png";
+$image-projectheadend: "../images/Project_End_Title.png";
+
+//project index
+$project-index: (
+	'p1': 'archive',
+	'p2': 'schuylkillwaterpark',
+	'p3': 'pavilion',
+	'p4': 'dockstreet',
+	'p5': 'ops',
+	'p6': '1523island',
+	'p7': 'cornellmodels',
+	'p8': 'sitedrawingslocal',
+	'p9': 'desk',
+	'p10': '127garage',
+	'p11': 'sitedrawingsinternational',
+	'p12': 'coffeetable',
+	'p13': 'scenephotography',
+	'p14': 'koleshopdwgs',
+	'p15': 'summerstudio',
+	'p16': 'mspbanner',
+	'p17': 'dresser'
+);
+
+//step images
+$image-stepleft-hold: '../images/stepleft.png';
+$image-stepleft-highlight: '../images/steplefthighlight.png';
+$image-stepright-hold: '../images/stepright.png';
+$image-stepright-highlight: '../images/steprighthighlight.png';

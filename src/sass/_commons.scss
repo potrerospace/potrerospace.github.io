@@ -1,0 +1,116 @@
+body {
+	background-color: $color-background;
+	text-align: center;
+}
+
+//header text
+h1 {
+	font-size: 30px;
+	font-family: $font-header;
+	color: $color-header;
+	padding:0 0.25em 0.5em 0.25em;
+	text-decoration: none;
+	line-height: 1.25em;
+}
+
+//subheader text
+h2 {
+	font-size: 18px;
+	font-family: $font-subheader;
+	color: $color-subheader;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	text-decoration: none;
+}
+
+//button text
+h3 {
+	font-size: 14px;
+	font-family: $font-subheader;
+	color: $color-button-text;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	text-decoration: none;
+}
+
+//default text left align, 25px indent
+p {
+	font-size: 12px;
+	font-family: $font-description;
+	color: $color-description;
+	text-decoration: none;
+	line-height: 1.5em;
+	padding: .15em;
+	text-indent: 25px;
+	text-align: left;
+}
+
+//description text center align
+.centerAlign{
+	@extend p;
+		text-align: center;
+}
+
+//description text center align Bold
+.centerAlignBold{
+	@extend p;
+		text-align: center;
+		font-weight: bold;
+}
+
+//full height, full width container for pages with z-indices
+.full_block {
+	@include centerContents($height: 100vh, $width: 100vw);
+	position: relative;
+	overflow: hidden;
+	h2 {
+		@include centerContents($width: 200px);
+		margin-top: 1em;
+		&:hover{
+					background-color: $dark-gray-tsp;
+				}
+	}
+	a {
+		text-decoration: none;
+	}
+}
+
+//header container -- see pages for container images
+.header {
+	@include centerContainer ($padding-top: 40px, $padding-bottom: 40px);
+}
+
+//navigation block
+.navigation {
+	@include centerContainer($position: fixed, $padding-top: 30px,
+			$padding-bottom: 30px, $background: linear-gradient($transparent,$color-background,$color-background));
+	bottom: 0px;
+
+		ul{
+			@include centerContents();
+			padding: 0;
+		}
+
+		li{
+			display: inline-block;
+			margin: 0 0.75em;
+			padding: .35em 1em;
+			border: none;
+			background-color: none;
+			border-radius: 5px;
+			@extend h2;
+				&:hover{
+					background-color: $dark-gray-tsp;
+				}
+}
+}
+
+//scrollbar handling Chrome, Safari
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+@-moz-document url-prefix() {
+    html,body{overflow: hidden !important;}
+}

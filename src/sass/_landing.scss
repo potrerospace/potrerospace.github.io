@@ -1,0 +1,51 @@
+//landing header
+.header_landing {
+	@include centerContents($height: 150px, $width: 300px, 
+			$background-image: $image-landinghead, $flex-direction: column);
+}
+
+//project section
+.projects_main {
+	@include centerContainer()
+	h2 {
+		@include centerContents($width: 200px);
+		margin-top: 1em;
+		&:hover{
+					background-color: $dark-gray-tsp;
+				}
+	}
+	a {
+		text-decoration: none;
+	}
+	margin-bottom: 200px;
+}
+
+//index buttons
+.index_button {
+	width: 150px;
+	border: none;
+	background-color: none;
+	border-radius: 5px;
+		&:hover{
+			background-color: $dark-gray-tsp;
+				}
+}
+
+//generalized project block
+%planding {
+	display: inline-block;
+	height: 200px;
+	width: 200px;
+	margin-bottom: 60px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+//generate project blocks from project index
+@each $p-num, $title in $project-index {
+	.#{$p-num}_landing {
+		@extend %planding;
+		@include preLoadHov('../images/#{$title}/lndImgBW.png',
+			'../images/#{$title}/lndImgCL.png');
+	}
+}

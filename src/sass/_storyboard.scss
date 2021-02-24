@@ -1,0 +1,11 @@
+//storyboards
+.storyboard_scroll {
+	@include bckImg("../images/Storyboard_Scroll.png");
+	background-size: cover;
+	height: 125vw;
+	width: 75vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20vw;
+	font-size: 0;
+}
