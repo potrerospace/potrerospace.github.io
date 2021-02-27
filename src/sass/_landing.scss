@@ -1,8 +1,18 @@
 //landing header
-.header_landing {
-	@include centerContents($height: 150px, $width: 300px, 
+.header {
+	@include rightJustifyContainer();
+}
+
+//landing footer
+.footer {
+	@include rightJustifyContents($height: 150px, $width: 300px, 
 			$background-image: $image-landinghead, $flex-direction: column);
 }
+.footerSplit {
+	@include rightJustifyContents($height: 150px, $width: 300px, 
+			$background-image: $image-landinghead, $flex-direction: column);
+}
+
 
 //project section
 .projects_main {

@@ -28,6 +28,28 @@
 	background-size: contain;
 }
 
+@mixin rightJustifyContainer ($position:relative, $padding-top:0px,
+						$padding-bottom:0px, $background:none){
+	position: $position;
+	width: 100%;
+	padding-top: $padding-top;
+	padding-bottom: $padding-bottom;
+	text-align: right;
+	background: $background;
+}
+
+//right-justify
+@mixin rightJustifyContents ($height:auto, $width:auto, $background-image:none, $flex-direction: row) {
+	display: flex;
+	flex-direction: $flex-direction;
+	justify-content: flex-end;
+	margin: auto;
+	height: $height;
+	width: $width;
+	background: url($background-image) no-repeat center center;
+	background-size: contain;
+}
+
 //preload background images and change on hover for landing projects
 @mixin preLoadHov($urlLand,$urlHover) {
 	background: url($urlLand) no-repeat center center,

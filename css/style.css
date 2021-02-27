@@ -85,7 +85,7 @@ p, .centerAlign, .centerAlignBold {
   padding-bottom: 30px;
   text-align: center;
   background: linear-gradient(rgba(229, 229, 229, 0), #e5e5e5, #e5e5e5);
-  bottom: 0px; }
+  top: 0px; }
   .navigation ul {
     display: flex;
     flex-direction: row;
@@ -115,10 +115,28 @@ p, .centerAlign, .centerAlignBold {
   html, body {
     overflow: hidden !important; } }
 
-.header_landing {
+.header {
+  position: relative;
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: right;
+  background: none; }
+
+.footer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
+  margin: auto;
+  height: 150px;
+  width: 300px;
+  background: url("../images/Landing_Title.png") no-repeat center center;
+  background-size: contain; }
+
+.footerSplit {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   margin: auto;
   height: 150px;
   width: 300px;

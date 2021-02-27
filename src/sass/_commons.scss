@@ -84,7 +84,7 @@ p {
 .navigation {
 	@include centerContainer($position: fixed, $padding-top: 30px,
 			$padding-bottom: 30px, $background: linear-gradient($transparent,$color-background,$color-background));
-	bottom: 0px;
+	top: 0px;
 
 		ul{
 			@include centerContents();
