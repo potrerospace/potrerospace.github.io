@@ -17,38 +17,55 @@
 }
 
 //center contents
-@mixin centerContents ($height:auto, $width:auto, $background-image:none, $flex-direction: row) {
+@mixin centerContents ($height:auto, $width:auto, $background-image:none, $flex-direction: row, $margin: auto) {
 	display: flex;
 	flex-direction: $flex-direction;
 	justify-content: center;
-	margin: auto;
+	margin: $margin;
 	height: $height;
 	width: $width;
 	background: url($background-image) no-repeat center center;
 	background-size: contain;
 }
 
-@mixin rightJustifyContainer ($position:relative, $padding-top:0px,
+//flexbox container
+@mixin flexContainer ($position:relative, $padding-top:0px,
 						$padding-bottom:0px, $background:none){
 	position: $position;
 	width: 100%;
 	padding-top: $padding-top;
 	padding-bottom: $padding-bottom;
-	text-align: right;
 	background: $background;
 }
 
-//right-justify
-@mixin rightJustifyContents ($height:auto, $width:auto, $background-image:none, $flex-direction: row) {
+//left-justify
+@mixin flexLeftJustify ($position:relative, $height:auto, $width:auto, $background-image:none, $flex-direction: row) {
+	position: $position;
 	display: flex;
 	flex-direction: $flex-direction;
-	justify-content: flex-end;
+	justify-content: flex-start;
 	margin: auto;
 	height: $height;
 	width: $width;
 	background: url($background-image) no-repeat center center;
 	background-size: contain;
+	width: 100%;
 }
+
+//right-justify
+@mixin flexSplitJustify ($position:relative, $height:auto, $width:auto, $background-image:none, $flex-direction: row) {
+	position: $position;
+	display: flex;
+	flex-direction: $flex-direction;
+	justify-content: space-between;
+	margin: auto;
+	height: $height;
+	width: $width;
+	background: url($background-image) no-repeat center center;
+	background-size: contain;
+	width: 100%;
+}
+
 
 //preload background images and change on hover for landing projects
 @mixin preLoadHov($urlLand,$urlHover) {

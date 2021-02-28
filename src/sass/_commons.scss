@@ -5,29 +5,29 @@ body {
 
 //header text
 h1 {
-	font-size: 30px;
-	font-family: $font-header;
+	font-size: 35px;
+	font-family: $font-title;
 	color: $color-header;
 	padding:0 0.25em 0.5em 0.25em;
 	text-decoration: none;
 	line-height: 1.25em;
 }
 
-//subheader text
+//button text
 h2 {
-	font-size: 18px;
-	font-family: $font-subheader;
+	font-size: 20px;
+	font-family: $font-header;
 	color: $color-subheader;
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 	text-decoration: none;
 }
 
-//button text
+//subheader text
 h3 {
-	font-size: 14px;
-	font-family: $font-subheader;
-	color: $color-button-text;
+	font-size: 18px;
+	font-family: $font-header;
+	color: $color-subheader;
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 	text-decoration: none;
@@ -82,22 +82,20 @@ p {
 
 //navigation block
 .navigation {
-	@include centerContainer($position: fixed, $padding-top: 30px,
-			$padding-bottom: 30px, $background: linear-gradient($transparent,$color-background,$color-background));
-	top: 0px;
 
 		ul{
 			@include centerContents();
 			padding: 0;
+			margin-left: 10px;
 		}
 
 		li{
 			display: inline-block;
-			margin: 0 0.75em;
-			padding: .35em 1em;
+			margin: 0 0.35em;
+			padding: .25em .5em;
 			border: none;
 			background-color: none;
-			border-radius: 5px;
+			border-radius: 2px;
 			@extend h2;
 				&:hover{
 					background-color: $dark-gray-tsp;
