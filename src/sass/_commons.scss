@@ -8,7 +8,7 @@ h1 {
 	font-size: 35px;
 	font-family: $font-title;
 	color: $color-header;
-	padding:0 0.25em 0.5em 0.25em;
+	padding:0 0.25em 0.25em 0.25em;
 	text-decoration: none;
 	line-height: 1.25em;
 }
@@ -58,20 +58,91 @@ p {
 		font-weight: bold;
 }
 
-//full height, full width container for pages with z-indices
-.full_block {
-	@include centerContents($height: 100vh, $width: 100vw);
-	position: relative;
-	overflow: hidden;
-	h2 {
-		@include centerContents($width: 200px);
-		margin-top: 1em;
-		&:hover{
-					background-color: $dark-gray-tsp;
-				}
+//default desktop layout
+//navigation flexbox
+.navBox {
+	@include flexMixin($position: absolute, $height: auto, $width: auto,
+	  $flex-direction: row, $justify-content: flex-start);
+	top: 0px;
+	padding: 30px;
+	background: linear-gradient($color-background,$color-background,$transparent);
+}
+
+//title flexbox
+.titleBox {
+	@include flexMixin($position: absolute, $height: auto, $width: auto,
+	 $background-image: linear-gradient($transparent,$color-background,$color-background),
+	  $flex-direction: row, $justify-content: space-between);
+	bottom: 0px;
+	padding: 30px;
+	background: linear-gradient($transparent,$color-background,$color-background);
+}
+
+//Potrero Badge
+.potreroBadge {
+	@include centerContents($height: auto, $width: auto, 
+			$background-image: $image-landinghead, $flex-direction: column, $margin: 0px);
+	margin-left: 20px;
+}
+
+//What Studio Title
+.wsTitle {
+	@include centerContents($height: auto, $width: auto, 
+			$background-image: none, $flex-direction: column, $margin: 0px);
+	margin-right: 50px;
+}
+
+
+//responsive mobile layout
+@media (max-width: $mobile-width)
+{
+	//navigation flexbox
+	.navBox {
+		@include flexMixin($position: absolute, $height: auto, $width: auto,
+		 $background-image: linear-gradient($color-background,$color-background,$transparent), 
+		 $flex-direction: row, $justify-content: center);
+		bottom: 0px;
+		top: auto;
+		background: linear-gradient($transparent,$color-background,$color-background);
 	}
-	a {
-		text-decoration: none;
+
+	//title flexbox
+	.titleBox {
+		@include flexMixin($position: absolute, $height: auto, $width: auto,
+		 $background-image: linear-gradient($transparent,$color-background,$color-background), 
+		 $flex-direction: row, $justify-content: flex-start);
+		top: 0px;
+		bottom: auto;
+		background: linear-gradient($color-background,$color-background,$transparent);
+	}
+
+	//Potrero Badge
+	.potreroBadge {
+		display: none;
+	}
+
+	//What Studio Title
+	.wsTitle {
+		@include centerContents($height: auto, $width: auto, 
+				$background-image: none, $flex-direction: column, $margin: 0px);
+		margin-right: auto;
+	}
+
+	//full height, full width container for pages with z-indices
+	.full_block {
+		@include centerContents($height: 100vh, $width: 100vw);
+		position: relative;
+		overflow: hidden;
+		h2 {
+			@include centerContents($width: 200px);
+			margin-top: 1em;
+			&:hover{
+						background-color: $dark-gray-tsp;
+					}
+		}
+		a {
+			text-decoration: none;
+		}
 	}
 }
 

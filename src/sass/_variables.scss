@@ -35,6 +35,9 @@ $image-holderhead: "../images/Holder_Title.png";
 $image-projecthead: "../images/Project_Title.png";
 $image-projectheadend: "../images/Project_End_Title.png";
 
+//Responsive breakpoints
+$mobile-width: 400px;
+
 //project index
 $project-index: (
 	'p1': 'archive',

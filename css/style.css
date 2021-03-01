@@ -8,7 +8,7 @@ h1 {
   font-size: 35px;
   font-family: "Crimson Text", serif;
   color: black;
-  padding: 0 0.25em 0.5em 0.25em;
+  padding: 0 0.25em 0.25em 0.25em;
   text-decoration: none;
   line-height: 1.25em; }
 
@@ -45,31 +45,124 @@ p, .centerAlign, .centerAlignBold {
   text-align: center;
   font-weight: bold; }
 
-.full_block {
+.navBox {
+  position: absolute;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   margin: auto;
-  height: 100vh;
-  width: 100vw;
+  height: auto;
+  width: auto;
   background: url(none) no-repeat center center;
   background-size: contain;
-  position: relative;
-  overflow: hidden; }
-  .full_block h2, .full_block .navigation li, .navigation .full_block li {
+  width: 100%;
+  top: 0px;
+  padding: 30px;
+  background: linear-gradient(#e5e5e5, #e5e5e5, rgba(229, 229, 229, 0)); }
+
+.titleBox {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  height: auto;
+  width: auto;
+  background: url(linear-gradient(rgba(229, 229, 229, 0), #e5e5e5, #e5e5e5)) no-repeat center center;
+  background-size: contain;
+  width: 100%;
+  bottom: 0px;
+  padding: 30px;
+  background: linear-gradient(rgba(229, 229, 229, 0), #e5e5e5, #e5e5e5); }
+
+.potreroBadge {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px;
+  height: auto;
+  width: auto;
+  background: url("../images/Landing_Title.png") no-repeat center center;
+  background-size: contain;
+  margin-left: 20px; }
+
+.wsTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px;
+  height: auto;
+  width: auto;
+  background: url(none) no-repeat center center;
+  background-size: contain;
+  margin-right: 50px; }
+
+@media (max-width: 400px) {
+  .navBox {
+    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: auto;
     height: auto;
-    width: 200px;
+    width: auto;
+    background: url(linear-gradient(#e5e5e5, #e5e5e5, rgba(229, 229, 229, 0))) no-repeat center center;
+    background-size: contain;
+    width: 100%;
+    bottom: 0px;
+    top: auto;
+    background: linear-gradient(rgba(229, 229, 229, 0), #e5e5e5, #e5e5e5); }
+  .titleBox {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: auto;
+    height: auto;
+    width: auto;
+    background: url(linear-gradient(rgba(229, 229, 229, 0), #e5e5e5, #e5e5e5)) no-repeat center center;
+    background-size: contain;
+    width: 100%;
+    top: 0px;
+    bottom: auto;
+    background: linear-gradient(#e5e5e5, #e5e5e5, rgba(229, 229, 229, 0)); }
+  .potreroBadge {
+    display: none; }
+  .wsTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+    height: auto;
+    width: auto;
     background: url(none) no-repeat center center;
     background-size: contain;
-    margin-top: 1em; }
-    .full_block h2:hover, .full_block .navigation li:hover, .navigation .full_block li:hover {
-      background-color: rgba(73, 73, 73, 0.1); }
-  .full_block a {
-    text-decoration: none; }
+    margin-right: auto; }
+  .full_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    height: 100vh;
+    width: 100vw;
+    background: url(none) no-repeat center center;
+    background-size: contain;
+    position: relative;
+    overflow: hidden; }
+    .full_block h2, .full_block .navigation li, .navigation .full_block li {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: auto;
+      height: auto;
+      width: 200px;
+      background: url(none) no-repeat center center;
+      background-size: contain;
+      margin-top: 1em; }
+      .full_block h2:hover, .full_block .navigation li:hover, .navigation .full_block li:hover {
+        background-color: rgba(73, 73, 73, 0.1); }
+    .full_block a {
+      text-decoration: none; } }
 
 .header {
   position: relative;
@@ -110,62 +203,17 @@ p, .centerAlign, .centerAlignBold {
   html, body {
     overflow: hidden !important; } }
 
-.header {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin: auto;
-  height: auto;
-  width: auto;
-  background: url(linear-gradient(#e5e5e5, #e5e5e5, rgba(229, 229, 229, 0))) no-repeat center center;
-  background-size: contain;
-  width: 100%;
-  top: 0px; }
-
-.footer {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: auto;
-  height: auto;
-  width: auto;
-  background: url(linear-gradient(rgba(229, 229, 229, 0), #e5e5e5, #e5e5e5)) no-repeat center center;
-  background-size: contain;
-  width: 100%;
-  bottom: 0px; }
-
-.potreroBadge {
+.projects_main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0px;
-  height: auto;
-  width: auto;
-  background: url("../images/Landing_Title.png") no-repeat center center;
-  background-size: contain;
-  margin-left: 20px; }
-
-.wsTitle {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0px;
+  margin: auto;
   height: auto;
   width: auto;
   background: url(none) no-repeat center center;
   background-size: contain;
-  margin-right: 30px; }
-
-.projects_main {
-  position: relative;
-  width: 100%;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  text-align: center;
-  background: none;
-  margin-bottom: 200px; }
+  height: 100vh;
+  overflow: scroll; }
   .projects_main h2, .projects_main .navigation li, .navigation .projects_main li {
     display: flex;
     flex-direction: row;
@@ -315,6 +363,47 @@ p, .centerAlign, .centerAlignBold {
   .p17_landing:hover {
     background: url("../images/dresser/lndImgCL.png") no-repeat center center;
     background-size: contain; }
+
+.projectContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  height: auto;
+  width: auto;
+  background: url(none) no-repeat center center;
+  background-size: contain;
+  flex-wrap: wrap; }
+
+.projectImage1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 30px;
+  height: 300px;
+  width: 300px;
+  background: url("../images/ceramicconcept/ceramicconcept.png") no-repeat center center;
+  background-size: contain; }
+
+.projectImage2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 30px;
+  height: 300px;
+  width: 300px;
+  background: url("../images/jreije/jreije.png") no-repeat center center;
+  background-size: contain; }
+
+.projectImage3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 30px;
+  height: 300px;
+  width: 300px;
+  background: url("../images/puckerbrush/puckerbrush.png") no-repeat center center;
+  background-size: contain; }
 
 .about_block {
   display: flex;

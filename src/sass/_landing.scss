@@ -1,34 +1,7 @@
-//header
-.header {
-	@include flexLeftJustify($position: absolute, $height: auto, $width: auto,
-	 $background-image: linear-gradient($color-background,$color-background,$transparent), $flex-direction: row);
-	top: 0px;
-}
-
-//footer
-.footer {
-	@include flexSplitJustify($position: absolute, $height: auto, $width: auto,
-	 $background-image: linear-gradient($transparent,$color-background,$color-background), $flex-direction: row);
-	bottom: 0px;
-}
-
-//Potrero Badge
-.potreroBadge {
-	@include centerContents($height: auto, $width: auto, 
-			$background-image: $image-landinghead, $flex-direction: column, $margin: 0px);
-	margin-left: 20px;
-}
-
-//What Studio Title
-.wsTitle {
-	@include centerContents($height: auto, $width: auto, 
-			$background-image: none, $flex-direction: column, $margin: 0px);
-	margin-right: 30px;
-}
-
 //project section
 .projects_main {
-	@include centerContainer()
+	@include centerContents ($height: auto, $width: auto, $background-image: none, 
+		$flex-direction: column, $margin: auto)
 	h2 {
 		@include centerContents($width: 200px);
 		margin-top: 1em;
@@ -39,7 +12,8 @@
 	a {
 		text-decoration: none;
 	}
-	margin-bottom: 200px;
+	height: 100vh;
+	overflow: scroll;
 }
 
 //index buttons
@@ -70,4 +44,30 @@
 		@include preLoadHov('../images/#{$title}/lndImgBW.png',
 			'../images/#{$title}/lndImgCL.png');
 	}
+}
+
+//placeholder project container
+.projectContainer {
+	@include centerContents($height: auto, $width: auto,
+	 $background-image: none, 
+	 $flex-direction: row, $margin: auto)
+	flex-wrap: wrap;
+}
+
+
+//placeholder project images
+.projectImage1 {
+	@include centerContents ($height:300px, $width:300px,
+	 $background-image:'../images/ceramicconcept/ceramicconcept.png', 
+	 $flex-direction: row, $margin: 30px)
+}
+.projectImage2 {
+	@include centerContents ($height:300px, $width:300px,
+	 $background-image:'../images/jreije/jreije.png', 
+	 $flex-direction: row, $margin: 30px)
+}
+.projectImage3 {
+	@include centerContents ($height:300px, $width:300px,
+	 $background-image:'../images/puckerbrush/puckerbrush.png', 
+	 $flex-direction: row, $margin: 30px)
 }
