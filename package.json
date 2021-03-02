@@ -11,7 +11,9 @@
     "url": "github.com/opensourcearchitecture/opensourcearchitecture.github.io.git"
   },
   "author": "Mitch",
-  "dependencies": {},
+  "dependencies": {
+    "body-scroll-lock": "^3.1.5"
+  },
   "devDependencies": {
     "@babel/core": "^7.8.6",
     "@babel/preset-env": "^7.8.6",

@@ -180,6 +180,9 @@ p {
     background: transparent; /* make scrollbar transparent */
 }
 
-@-moz-document url-prefix() {
-    html,body{overflow: hidden !important;}
+html {
+    	height: 100vh;
+    	width: 100vw;
+    	overflow: hidden;
+    	position: fixed;
 }

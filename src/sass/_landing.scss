@@ -13,7 +13,6 @@
 		text-decoration: none;
 	}
 	height: 100vh;
-	overflow: scroll;
 }
 
 //index buttons
@@ -51,7 +50,11 @@
 	@include centerContents($height: auto, $width: auto,
 	 $background-image: none, 
 	 $flex-direction: row, $margin: auto)
+	height: 85vh;
+	width: 100%;
 	flex-wrap: wrap;
+	overflow: scroll;
+	align-items: center;
 }
 
 
