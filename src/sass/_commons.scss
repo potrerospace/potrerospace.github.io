@@ -45,6 +45,8 @@ p {
 	text-align: left;
 }
 
+//-----common classes and styling throughout site------
+
 //description text center align
 .centerAlign{
 	@extend p;
@@ -58,7 +60,43 @@ p {
 		font-weight: bold;
 }
 
-//default desktop layout
+//project section
+.mainBox {
+	@include centerContents ($height: auto, $width: auto, $background-image: none, 
+		$flex-direction: column, $margin: auto)
+	height: 100vh;
+}
+
+//header container -- see pages for container images
+.header {
+	@include centerContainer ($padding-top: 40px, $padding-bottom: 40px);
+}
+
+//navigation block
+.navigation {
+
+		ul{
+			@include centerContents();
+			padding: 0;
+			margin-left: 10px;
+		}
+
+		li{
+			display: inline-block;
+			margin: 0 0.35em;
+			padding: .25em .5em;
+			border: none;
+			background-color: none;
+			border-radius: 5px;
+			@extend h2;
+				&:hover{
+					background-color: $highlight-orange-tsp;
+				}
+}
+}
+
+//-------default desktop layout--------
+
 //navigation flexbox
 .navBox {
 	@include flexMixin($position: absolute, $height: auto, $width: auto,
@@ -70,7 +108,7 @@ p {
 
 //title flexbox
 .titleBox {
-	@include flexMixin($position: absolute, $height: auto, $width: auto,
+	@include flexMixin($position: absolute, $height: auto, $width: 100vw,
 	 $background-image: linear-gradient($transparent,$color-background,$color-background),
 	  $flex-direction: row, $justify-content: space-between);
 	bottom: 0px;
@@ -93,17 +131,18 @@ p {
 }
 
 
-//responsive mobile layout
+//------responsive mobile layout------
+
 @media (max-width: $mobile-width)
 {
 	//navigation flexbox
 	.navBox {
-		@include flexMixin($position: absolute, $height: auto, $width: auto,
-		 $background-image: linear-gradient($color-background,$color-background,$transparent), 
+		@include flexMixin($position: absolute, $height: auto, $width: 90vw, 
 		 $flex-direction: row, $justify-content: center);
-		bottom: 0px;
+		bottom: 40px;
+		padding: 10px;
 		top: auto;
-		background: linear-gradient($transparent,$color-background,$color-background);
+		background: none;
 	}
 
 	//title flexbox
@@ -128,58 +167,25 @@ p {
 		margin-right: auto;
 	}
 
-	//full height, full width container for pages with z-indices
-	.full_block {
-		@include centerContents($height: 100vh, $width: 100vw);
-		position: relative;
-		overflow: hidden;
-		h2 {
-			@include centerContents($width: 200px);
-			margin-top: 1em;
-			&:hover{
-						background-color: $dark-gray-tsp;
-					}
+	//button list elements
+	.navigation li{
+			margin: 0 0.3em;
+			padding: .65em .65em;
+			background-color: $dark-gray-tsp;
+			border-radius: 5px;
 		}
-		a {
-			text-decoration: none;
-		}
-	}
 }
 
-//header container -- see pages for container images
-.header {
-	@include centerContainer ($padding-top: 40px, $padding-bottom: 40px);
-}
 
-//navigation block
-.navigation {
-
-		ul{
-			@include centerContents();
-			padding: 0;
-			margin-left: 10px;
-		}
-
-		li{
-			display: inline-block;
-			margin: 0 0.35em;
-			padding: .25em .5em;
-			border: none;
-			background-color: none;
-			border-radius: 2px;
-			@extend h2;
-				&:hover{
-					background-color: $dark-gray-tsp;
-				}
-}
-}
-
+//------special handlers------
+s
 //scrollbar handling Chrome, Safari
 ::-webkit-scrollbar {
     width: 0px;
     background: transparent; /* make scrollbar transparent */
 }
 
+//disable body scroll
 html {
     	height: 100vh;
     	width: 100vw;

@@ -1,19 +1,4 @@
-//project section
-.projects_main {
-	@include centerContents ($height: auto, $width: auto, $background-image: none, 
-		$flex-direction: column, $margin: auto)
-	h2 {
-		@include centerContents($width: 200px);
-		margin-top: 1em;
-		&:hover{
-					background-color: $dark-gray-tsp;
-				}
-	}
-	a {
-		text-decoration: none;
-	}
-	height: 100vh;
-}
+
 
 //index buttons
 .index_button {
@@ -45,12 +30,12 @@
 	}
 }
 
-//placeholder project container
+//projectContainer
 .projectContainer {
 	@include centerContents($height: auto, $width: auto,
 	 $background-image: none, 
 	 $flex-direction: row, $margin: auto)
-	height: 85vh;
+	height: 65vh;
 	width: 100%;
 	flex-wrap: wrap;
 	overflow: scroll;
