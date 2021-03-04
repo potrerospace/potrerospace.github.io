@@ -2,7 +2,10 @@
 @import url(https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap);
 body {
   background-color: #e5e5e5;
-  text-align: center; }
+  text-align: center;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none; }
 
 h1 {
   font-size: 35px;
@@ -46,15 +49,12 @@ p, .centerAlign, .centerAlignBold {
   font-weight: bold; }
 
 .mainBox {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: auto;
-  height: auto;
-  width: auto;
-  background: url(none) no-repeat center center;
-  background-size: contain;
-  height: 100vh; }
+  position: relative;
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+  background: none; }
 
 .header {
   position: relative;
@@ -327,21 +327,6 @@ html {
   .p17_landing:hover {
     background: url("../images/dresser/lndImgCL.png") no-repeat center center;
     background-size: contain; }
-
-.projectContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: auto;
-  height: auto;
-  width: auto;
-  background: url(none) no-repeat center center;
-  background-size: contain;
-  height: 65vh;
-  width: 100%;
-  flex-wrap: wrap;
-  overflow: scroll;
-  align-items: center; }
 
 .projectImage1 {
   display: flex;

@@ -30,32 +30,16 @@
 	}
 }
 
-//projectContainer
-.projectContainer {
-	@include centerContents($height: auto, $width: auto,
-	 $background-image: none, 
-	 $flex-direction: row, $margin: auto)
-	height: 65vh;
-	width: 100%;
-	flex-wrap: wrap;
-	overflow: scroll;
-	align-items: center;
-}
-
-
 //placeholder project images
 .projectImage1 {
 	@include centerContents ($height:300px, $width:300px,
-	 $background-image:'../images/ceramicconcept/ceramicconcept.png', 
-	 $flex-direction: row, $margin: 30px)
+	 $background-image:'../images/ceramicconcept/ceramicconcept.png', $margin: 30px)
 }
 .projectImage2 {
 	@include centerContents ($height:300px, $width:300px,
-	 $background-image:'../images/jreije/jreije.png', 
-	 $flex-direction: row, $margin: 30px)
+	 $background-image:'../images/jreije/jreije.png', $margin: 30px)
 }
 .projectImage3 {
 	@include centerContents ($height:300px, $width:300px,
-	 $background-image:'../images/puckerbrush/puckerbrush.png', 
-	 $flex-direction: row, $margin: 30px)
+	 $background-image:'../images/puckerbrush/puckerbrush.png', $margin: 30px)
 }

@@ -1,6 +1,9 @@
 body {
 	background-color: $color-background;
 	text-align: center;
+	overflow: scroll;
+	-ms-overflow-style: none; //hide scroll bar IE and Edge
+	scrollbar-width: none; //hide scroll bar firefox
 }
 
 //header text
@@ -62,9 +65,7 @@ p {
 
 //project section
 .mainBox {
-	@include centerContents ($height: auto, $width: auto, $background-image: none, 
-		$flex-direction: column, $margin: auto)
-	height: 100vh;
+	@include centerContainer()
 }
 
 //header container -- see pages for container images

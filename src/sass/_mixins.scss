@@ -31,6 +31,7 @@
 //flexbox container
 @mixin flexContainer ($position:relative, $padding-top:0px,
 						$padding-bottom:0px, $background:none){
+	display: flex;
 	position: $position;
 	width: 100%;
 	padding-top: $padding-top;
