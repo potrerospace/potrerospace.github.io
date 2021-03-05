@@ -1,9 +1,7 @@
 body {
 	background-color: $color-background;
+	margin: 0px;
 	text-align: center;
-	overflow: scroll;
-	-ms-overflow-style: none; //hide scroll bar IE and Edge
-	scrollbar-width: none; //hide scroll bar firefox
 }
 
 //header text
@@ -48,6 +46,14 @@ p {
 	text-align: left;
 }
 
+a {
+	text-decoration: none;
+	@extend h2;
+				&:hover{
+					color: $highlight-orange;
+				}
+}
+
 //-----common classes and styling throughout site------
 
 //description text center align
@@ -63,9 +69,22 @@ p {
 		font-weight: bold;
 }
 
+//body scroll container
+.scrollContainer{
+	@include flexMixin($position: fixed, $height: 100vh, $width: 100vw, $background-image: none, 
+		$flex-direction: column, $justify-content: flex-start);
+	overflow: scroll;
+	-ms-overflow-style: none; //hide scroll bar IE and Edge
+	scrollbar-width: none; //hide scroll bar firefox
+	z-index: -10;
+}
+
 //project section
 .mainBox {
-	@include centerContainer()
+	@include flexMixin($position: relative, $height: auto, $width: auto, $background-image: none, 
+		$flex-direction: row, $justify-content: center);
+	padding-top: 200px;
+	padding-bottom: 200px;
 }
 
 //header container -- see pages for container images
@@ -91,7 +110,7 @@ p {
 			border-radius: 5px;
 			@extend h2;
 				&:hover{
-					background-color: $highlight-orange-tsp;
+					color: $highlight-orange;
 				}
 }
 }
@@ -100,35 +119,37 @@ p {
 
 //navigation flexbox
 .navBox {
-	@include flexMixin($position: absolute, $height: auto, $width: auto,
+	@include flexMixin($position: fixed, $height: auto, $width: 100vw,
 	  $flex-direction: row, $justify-content: flex-start);
 	top: 0px;
-	padding: 30px;
-	background: linear-gradient($color-background,$color-background,$transparent);
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background: $light-gray-tsp;
 }
 
 //title flexbox
 .titleBox {
-	@include flexMixin($position: absolute, $height: auto, $width: 100vw,
+	@include flexMixin($position: fixed, $height: auto, $width: 100vw,
 	 $background-image: linear-gradient($transparent,$color-background,$color-background),
 	  $flex-direction: row, $justify-content: space-between);
 	bottom: 0px;
-	padding: 30px;
-	background: linear-gradient($transparent,$color-background,$color-background);
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background: $light-gray-tsp;
 }
 
 //Potrero Badge
 .potreroBadge {
 	@include centerContents($height: auto, $width: auto, 
 			$background-image: $image-landinghead, $flex-direction: column, $margin: 0px);
-	margin-left: 20px;
+	margin-left: 30px;
 }
 
 //What Studio Title
 .wsTitle {
 	@include centerContents($height: auto, $width: auto, 
 			$background-image: none, $flex-direction: column, $margin: 0px);
-	margin-right: 50px;
+	margin-right: 30px;
 }
 
 
